@@ -1,15 +1,39 @@
-var webpack = require('webpack');
-var WebpackDevServer = require('webpack-dev-server');
-var config = require('../../webpack.config.js');
+const Hapi = require('hapi')
 
-new WebpackDevServer(webpack(config), {
-  publicPath: config.output.publicPath,
-  hot: true,
-  historyApiFallback: true
-}).listen(3000, 'localhost', function (err, result) {
+const routes = require('./routes')
+
+// Create a server with a host and port
+const server = new Hapi.Server()
+
+server.connection({
+  host: 'localhost',
+  port: process.env.PORT || 8000,
+  routes: {
+    cors: {
+      additionalExposedHeaders: ['Authorization', 'x-requested-with'],
+      additionalHeaders: ['x-run-id', 'x-requested-with']
+    },
+    response: {
+      // Do not throw error when failing validation
+      failAction: 'log',
+      // Options to pass through to Joi validate function
+      options: {
+        allowUnknown: false
+      }
+    }
+  }
+})
+
+// Add the routes
+server.route(routes.enpoints)
+
+// Start the server
+server.start((err) => {
   if (err) {
-    console.log(err);
+    throw err
   }
 
-  console.log('Listening at localhost:3000');
-});
+  console.log('Server running at:', server.info.uri)
+})
+
+module.exports = server

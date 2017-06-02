@@ -1,0 +1,144 @@
+{
+    "questionnaires": [
+        {
+            "id": "1",
+            "title": "This is the title of the Questionnaire",
+            "description": "And this is the description. Pretty exciting, isn't it?",
+            "questions": [
+                {
+                    "id": "1",
+                    "title": "Question 1",
+                    "answers": [
+                        {
+                            "title": "Culpa fugiat labore sit consectetur incididunt in veniam laborum deserunt ullamco laborum officia voluptate.",
+                            "type": "positive"
+                        },
+                        {
+                            "title": "Elit quis adipisicing exercitation adipisicing est ut eu dolore cupidatat mollit incididunt.",
+                            "type": "negative"
+                        },
+                        {
+                            "title": "Esse consectetur deserunt occaecat dolor Lorem anim excepteur.",
+                            "type": "neutral"
+                        }
+                    ]
+                },
+                {
+                    "id": "2",
+                    "title": "Question 2",
+                    "answers": [
+                        {
+                            "title": "Est aute amet et et esse.",
+                            "type": "neutral" 
+                        },
+                        {
+                            "title": "Nulla officia aliquip pariatur sunt proident incididunt laborum amet.",
+                            "type": "negative"
+                        },
+                        {
+                            "title": "Officia sint nostrud nulla velit labore dolore exercitation.",
+                            "type": "positive"
+                        }
+                    ]
+                },
+                {
+                    "id": "3",
+                    "title": "Question 3",
+                    "answers": [
+                        {
+                            "title": "Culpa fugiat labore sit consectetur incididunt in veniam laborum deserunt ullamco laborum officia voluptate.",
+                            "type": "positive"
+                        },
+                        {
+                            "title": "Elit quis adipisicing exercitation adipisicing est ut eu dolore cupidatat mollit incididunt.",
+                            "type": "negative"
+                        },
+                        {
+                            "title": "Esse consectetur deserunt occaecat dolor Lorem anim excepteur.",
+                            "type": "neutral"
+                        }
+                    ]
+                },
+                {
+                    "id": "4",
+                    "title": "Question 4",
+                    "answers": [
+                        {
+                            "title": "Est aute amet et et esse.",
+                            "type": "neutral" 
+                        },
+                        {
+                            "title": "Nulla officia aliquip pariatur sunt proident incididunt laborum amet.",
+                            "type": "negative"
+                        },
+                        {
+                            "title": "Officia sint nostrud nulla velit labore dolore exercitation.",
+                            "type": "positive"
+                        }
+                    ]
+                },
+                {
+                    "id": "5",
+                    "title": "Question 5",
+                    "answers": [
+                        {
+                            "title": "Culpa fugiat labore sit consectetur incididunt in veniam laborum deserunt ullamco laborum officia voluptate.",
+                            "type": "positive"
+                        },
+                        {
+                            "title": "Elit quis adipisicing exercitation adipisicing est ut eu dolore cupidatat mollit incididunt.",
+                            "type": "negative"
+                        },
+                        {
+                            "title": "Esse consectetur deserunt occaecat dolor Lorem anim excepteur.",
+                            "type": "neutral"
+                        }
+                    ]
+                },
+                {
+                    "id": "6",
+                    "title": "Question 6",
+                    "answers": [
+                        {
+                            "title": "Est aute amet et et esse.",
+                            "type": "neutral" 
+                        },
+                        {
+                            "title": "Nulla officia aliquip pariatur sunt proident incididunt laborum amet.",
+                            "type": "negative"
+                        },
+                        {
+                            "title": "Officia sint nostrud nulla velit labore dolore exercitation.",
+                            "type": "positive"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "2",
+            "title": "Elit voluptate commodo incididunt aliquip velit eu nostrud laboris est id.",
+            "description": "Magna adipisicing pariatur consectetur laborum veniam elit adipisicing deserunt nisi cillum Lorem labore.",
+            "questions": [
+                {
+                    "id": "1",
+                    "title": "Ipsum eiusmod duis sint consectetur Lorem ex proident labore id ullamco.",
+                    "answers": [
+                        {
+                            "title": "Culpa fugiat labore sit consectetur incididunt in veniam laborum deserunt ullamco laborum officia voluptate.",
+                            "type": "positive"
+                        },
+                        {
+                            "title": "Elit quis adipisicing exercitation adipisicing est ut eu dolore cupidatat mollit incididunt.",
+                            "type": "negative"
+                        },
+                        {
+                            "title": "Esse consectetur deserunt occaecat dolor Lorem anim excepteur.",
+                            "type": "neutral"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

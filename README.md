@@ -1,12 +1,12 @@
-mobx-react-boilerplate
-=====================
+Full questionnaire application using ES6, Hapi, ReactJS/Mobx Webpack and Babel. It includes it's own RESTful API server
 
-A minimal application that combines [MobX](https://mobxjs.github.io/mobx) with [React](https://facebook.github.io/react).
-Supports ES6 and JSX compilation through babel.
+# Requirements
+- `node >= 7.7.1` 
+- `npm >= 4.2.1`
 
-* For a more sophisticated project to start with, see the full TodoMVC implementation: [mobx-react-todomvc](https://github.com/mobxjs/mobx-react-todomvc).
+(*) not tested on lower versions
 
-### Run the example
+### Install & Run
 
 ```
 npm install
@@ -14,7 +14,19 @@ npm start
 open http://localhost:3000
 ```
 
+### Test
+```
+npm test
+```
 
-### Credits
+### Considerations
+- No database used. Runs are not persistent
+- Server and client contained in this repo for simplicity 
+- `server/` folder contains a fully independent project 
+- Server and client are prepared to be in different hosts/domains (CORS enabled) 
+- Since this is supposed to be a SaaS based system, I focused mostly on the api
+- Client not production ready. We'd need a new `webpack.config.js` file in order
+to compile the bundle just once, compress code, exclude sourcemaps, etc
+- Missing front-end tests. Mostly for AppState.js. I'd also add nightwatch as end to end test framework
+- Client not wrapping server responses at this moment (TODO)
 
-* [Mendix](http://github.com/mendix) for providing the opportunity to battle test this approach (we're hiring!).

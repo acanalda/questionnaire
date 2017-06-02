@@ -1,0 +1,31 @@
+{
+  "name": "questionnaire-server",
+  "version": "1.0.0",
+  "description": "HTTP server exposing a REST api to support the 'Questionnaire' web app",
+  "main": "app.js",
+  "scripts": {
+    "start": "nodemon app",
+    "test": "mocha test/init.test.js test --recursive",
+    "lint": "eslint ./"
+  },
+  "author": "Arturo Canalda",
+  "license": "ISC",
+  "engines": {
+    "node" : ">=7.7.1",
+    "npm" : ">=4.2.1"
+  },
+  "dependencies": {
+    "boom": "^5.1.0",
+    "hapi": "^16.3.0",
+    "hapi-test": "^5.1.0",
+    "joi": "^10.5.2",
+    "lodash": "^4.17.4",
+    "uuid": "^3.0.1"
+  },
+  "devDependencies": {
+    "mocha": "^3.4.2",
+    "nodemon": "^1.11.0",
+    "should": "^11.2.1",
+    "eslint": "^3.19.0"
+  }
+}
